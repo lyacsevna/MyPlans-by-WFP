@@ -1,0 +1,72 @@
+﻿<Window x:Class="MyPlans_by_WFP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPlans_by_WFP"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="My Plans"  WindowState="Maximized">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="E:\MyPlans by WFP\Model\gora_vershina_sneg_194407_3840x2400.jpg" Stretch="UniformToFill"/>
+            </Grid.Background>
+
+            
+            <Rectangle Fill="#673ab7" Opacity="0.15" />
+
+            <Grid Margin="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="226*"/>
+                <ColumnDefinition Width="261*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="173" Width="386">
+                <TextBlock Text="Организуйте свое время!" 
+               FontSize="29" 
+               FontWeight="Bold" 
+               Foreground="White" 
+               TextAlignment="Center" 
+               Margin="0,0,0,20" Width="363"/>
+                <TextBlock Text="Планируйте задачи и достигайте целей." 
+               FontSize="20" 
+               Foreground="White" 
+               TextAlignment="Center" 
+               TextWrapping="Wrap" 
+               Margin="0,0,0,20"/>
+                <TextBlock Text="Сделайте шаг к успеху!" 
+               FontSize="24" 
+               FontWeight="SemiBold" 
+               Foreground="White" 
+               TextAlignment="Center"/>
+            </StackPanel>
+
+
+         
+            <Border Grid.Column="1" MinWidth="400" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20" Height="324">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="2" Color="LightGray" ShadowDepth="0"/>
+                </Border.Effect>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Вход" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0 0 0 10"/>
+                        <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Введите email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,0,0,10"/>
+                        <PasswordBox x:Name="passBox" materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,0,0,20"/>
+                        <Button Content="Войти" Margin="0 15" Click="SignInButton_Click" Background="#673ab7" Foreground="White" FontWeight="Bold" Padding="10,5"/>
+                        <Grid Margin="0 0 0 10" HorizontalAlignment="Center">
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Click="SignUpButton_Click">
+                                <TextBlock>
+                                    <Run Text="Нет аккаунта?" Foreground="Gray"/> 
+                                    <Run Text=" Зарегистрироваться" Foreground="#673ab7" FontWeight="Bold"/>
+                                </TextBlock>
+                            </Button>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
+

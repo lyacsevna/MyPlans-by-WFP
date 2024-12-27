@@ -1,0 +1,73 @@
+﻿<Window x:Class="MyPlans_by_WFP.CategoryManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyPlans_by_WFP"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Менеджер категорий" Width="913" d:DesignHeight="351.82">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Margin="10" Grid.Column="0" Grid.RowSpan="2">
+            <StackPanel Margin="10">
+                <Label Content="Создать категорию:" FontSize="15" FontWeight="Bold" Margin="0,0,0,5" />
+                <TextBox x:Name="NewCategoryNameTextBox"
+                          materialDesign:HintAssist.Hint="Введите название"
+                          Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                          Height="45"
+                          Margin="0,0,0,10" />
+                <Button Content="Добавить категорию" 
+                        Style="{StaticResource MaterialDesignOutlinedButton}" 
+                        Click="AddCategoryButton_Click" 
+                        Margin="0,10,0,0" Height="45"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Margin="10" Grid.Column="1" Grid.Row="0">
+            <DataGrid x:Name="CategoryDataGrid" 
+                      AutoGenerateColumns="False" 
+                      Margin="10" 
+                      FontSize="15" 
+                      IsReadOnly="True" 
+                      SelectionChanged="CategoryDataGrid_SelectionChanged"
+                      CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID категории" Binding="{Binding CategoryId}" />
+                    <DataGridTextColumn Header="Название" Binding="{Binding CategoryName}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+
+        <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Margin="10" Grid.Column="2" Grid.Row="0">
+            <StackPanel Margin="10">
+                <Label Content="Данные о категории:" FontSize="18" FontWeight="Bold"/>
+                <Label Content="Название категории:" />
+                <TextBox x:Name="CategoryNameTextBox" Height="45" Margin="0,0,0,10"/>
+                <Button Name="EditButton" Content="Редактировать" Margin="0,10,0,0" Click="EditButton_Click" Height="45"/>
+                <Button Content="Удалить категорию" Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0,10,0,20" Click="DeleteButton_Click" Height="45"/>
+                <Button Content="На главную" Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0,10,0,0" Click="GoToMainButton_Click" Height="45"/>
+            </StackPanel>
+        </Border>
+
+     
+    </Grid>
+</Window>
+
+
+
+
+
+
