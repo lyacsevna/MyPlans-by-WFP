@@ -1,71 +1,71 @@
-# Приложение-планер
+# Planner app
 
-Приложение-планер — это удобный инструмент для управления ежедневными задачами. Оно предоставляет пользователям возможность легко записывать, сортировать и организовывать свои дела. Это приложение было реализовано мной в рамках курсовой работы в вузе. Стек - C# + WPF + Microsoft SQL Server
+The planner app is a convenient tool for managing daily tasks. It provides users with the ability to easily record, sort and organize their affairs. This application was implemented by me as part of my coursework at the university. Stack - C# + WPF + Microsoft SQL Server
 
-<image src="https://github.com/lyacsevna/MyPlans/blob/master/mainwindow.png?raw=true" alt="Главное окно">
-<image src="https://github.com/lyacsevna/MyPlans/blob/master/addtask.png?raw=true" alt="Добавление задачи">
+<image src="https://github.com/lyacsevna/MyPlans/blob/master/mainwindow.png?raw=true" alt=" Main window ">
+< image src="https://github.com/lyacsevna/MyPlans/blob/master/addtask.png?raw=true" alt= "Adding a task">
 
-## Основные функции
+## Main functions
 
-Добавление задачи: Пользователь может добавлять новые задачи, вводя название и описание, а также устанавливая дату и время выполнения.
+Adding a task: The user can add new tasks by entering a title and description, as well as setting the due date and time.
 
-Приоритет задач: Возможность установки уровня приоритета (высокий, средний, низкий) для каждой задачи, что помогает сосредоточиться на наиболее важных делах.
+Task Priority: Ability to set a priority level ( high , medium, low) for each task, helping you focus on the most important things.
 
-Создание категорий: Пользователь может создавать собственные категории задач (например, работа, учеба, личные дела, спорт и т.д.).
+Creating categories: The user can create their own task categories (e.g. work, study, personal matters, sports, etc.).
 
-Категоризация при добавлении: При добавлении новой задачи пользователь может выбирать категорию из выпадающего списка, что упрощает организацию задач.
+Categorization on Add: When adding a new task, the user can select a category from a drop-down list, making it easier to organize tasks.
 
-Разделение задач по пользователям: Каждому пользователю предоставляется отдельный доступ к функционалу приложения. Для этого реализованы функции регистрации и авторизации, что позволяет пользователям создавать свои аккаунты и входить в систему.
+Separation of tasks by users: Each user is provided with separate access to the application functionality. For this purpose, registration and authorization functions are implemented, which allows users to create their own accounts and log in to the system.
 
-## Установка и сборка проекта
+## Installing and building the project
 
-Следуйте приведённым ниже шагам для установки и сборки проекта на вашем компьютере.
+Please follow the steps below to install and build the project on your computer.
 
-### Предварительные требования
+### Prerequisites
 
-Перед началом убедитесь, что у вас установлены следующие программы:
+Before you begin, make sure you have the following programs installed:
 
-- [Visual Studio](https://visualstudio.microsoft.com/) (рекомендуется версия 2019 или новее)
-- [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0) или новее
+- [ Visual Studio ](https://visualstudio.microsoft.com/) (version 2019 or newer recommended)
+- [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0) or later
 
-### Клонирование репозитория
+### Cloning a repository
 
-1. Откройте терминал (или командную строку).
-2. Клонируйте репозиторий с помощью следующей команды:
+1. Open the terminal (or command prompt).
+2. Clone the repository using the following command:
 
-Копировать
-```bash
+Copy
+``` bash
 git clone https://github.com/lyacsevna/MyPlans.git
 ```
-3. Перейдите в директорию проекта:
-```bash
+3. Go to the project directory:
+``` bash
 cd MyPlans
 ```
-### Сборка проекта
+### Building the project
 
-1. Откройте решение в Visual Studio, дважды щёлкнув файл `.sln`, который находится в корне репозитория.
-2. Убедитесь, что у вас выбрана правильная конфигурация сборки (Debug или Release).
-3. Постройте проект, нажав `Ctrl + Shift + B` или выбрав `Build -> Build Solution` из меню.
+1. Open the solution in Visual Studio Studio by double-clicking the `. sln ` file located in the root of the .
+2. Make sure you have the correct build configuration selected ( Debug or Release ).
+3. Build the project by pressing ` Ctrl + Shift + B` or by selecting ` Build -> Build Solution ` from the menu.
 
-### Запуск приложения
+### Launching the application
 
-1. После успешной сборки запустите приложение, нажав `F5` или выбрав `Debug -> Start Debugging`.
-2. Приложение должно открыть окно программы.
+1. After successful build, run the application by pressing `F5` or selecting ` Debug -> Start Debugging `.
+2. The application should open the program window.
 
-### Установка зависимостей
+### Installing dependencies
 
-Если проект использует сторонние библиотеки (например, через NuGet), выполните восстановление пакетов:
+If the project uses third-party libraries (for example, via NuGet ), perform a package restore:
 
-- Откройте `Package Manager Console` в Visual Studio.
-- Выполните команду:
+- Open `Package Manager Console` in Visual Studio.
+- Do it command :
 ```bash
 powershell
-Update-Package -Reinstall
+Update-Package-Reinstall
 ```
-### Устранение неполадок
+### Troubleshooting
 
-Если у вас возникли проблемы при установке или сборке, проверьте следующие моменты:
+If you have any problems with installation or assembly, please check the following points:
 
-- Убедитесь, что все зависимости установлены.
-- Проверьте, что у вас установлена правильная версия .NET.
-- Посмотрите в `Output` или `Error List` в V
+- Make sure all dependencies are installed.
+- Check that you have the correct version of .NET installed.
+- Look in ` Output ` or ` Error List ` in V
