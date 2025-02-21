@@ -3,7 +3,7 @@
 The planner app is a convenient tool for managing daily tasks. It provides users with the ability to easily record, sort and organize their affairs. This application was implemented by me as part of my coursework at the university. Stack - C# + WPF + Microsoft SQL Server
 
 <image src="https://github.com/lyacsevna/MyPlans/blob/master/mainwindow.png?raw=true" alt=" Main window ">
-< image src="https://github.com/lyacsevna/MyPlans/blob/master/addtask.png?raw=true" alt= "Adding a task">
+<image src="https://github.com/lyacsevna/MyPlans/blob/master/addtask.png?raw=true" alt= "Adding a task">
 
 ## Main functions
 
