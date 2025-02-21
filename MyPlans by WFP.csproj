@@ -91,44 +91,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddNewCategoryWindow.xaml.cs">
+    <Compile Include="AllWindows\CategoryManagement\AddNewCategoryWindow.xaml.cs">
       <DependentUpon>AddNewCategoryWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddTaskWindow.xaml.cs">
+    <Compile Include="AllWindows\TaskManagement\AddTaskWindow.xaml.cs">
       <DependentUpon>AddTaskWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ArchiveTasks.xaml.cs">
+    <Compile Include="AllWindows\Archive\ArchiveTasks.xaml.cs">
       <DependentUpon>ArchiveTasks.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CategoryManagement.xaml.cs">
+    <Compile Include="AllWindows\CategoryManagement\CategoryManagement.xaml.cs">
       <DependentUpon>CategoryManagement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PasswordInputDialog.xaml.cs">
+    <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="AllWindows\LoginRegistration\PasswordInputDialog.xaml.cs">
       <DependentUpon>PasswordInputDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Project.cs" />
-    <Compile Include="SignUpWindow.xaml.cs">
+    <Compile Include="AllWindows\LoginRegistration\SignUpWindow.xaml.cs">
       <DependentUpon>SignUpWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TasksWindowView.xaml.cs">
+    <Compile Include="AllWindows\TaskManagement\TasksWindowView.xaml.cs">
       <DependentUpon>TasksWindowView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserProfile.xaml.cs">
+    <Compile Include="AllWindows\UserProfile\UserProfile.xaml.cs">
       <DependentUpon>UserProfile.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddNewCategoryWindow.xaml">
+    <Page Include="AllWindows\CategoryManagement\AddNewCategoryWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddTaskWindow.xaml">
+    <Page Include="AllWindows\TaskManagement\AddTaskWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ArchiveTasks.xaml">
+    <Page Include="AllWindows\Archive\ArchiveTasks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CategoryManagement.xaml">
+    <Page Include="AllWindows\CategoryManagement\CategoryManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -144,19 +145,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PasswordInputDialog.xaml">
+    <Page Include="AllWindows\LoginRegistration\PasswordInputDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SignUpWindow.xaml">
+    <Page Include="AllWindows\LoginRegistration\SignUpWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TasksWindowView.xaml">
+    <Page Include="AllWindows\TaskManagement\TasksWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserProfile.xaml">
+    <Page Include="AllWindows\UserProfile\UserProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
