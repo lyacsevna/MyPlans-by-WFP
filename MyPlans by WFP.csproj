@@ -103,7 +103,6 @@
     <Compile Include="AllWindows\CategoryManagement\CategoryManagement.xaml.cs">
       <DependentUpon>CategoryManagement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataBaseHelper.cs" />
     <Compile Include="AllWindows\LoginRegistration\PasswordInputDialog.xaml.cs">
       <DependentUpon>PasswordInputDialog.xaml</DependentUpon>
     </Compile>
