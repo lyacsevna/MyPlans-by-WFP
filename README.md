@@ -3,6 +3,7 @@
 Приложение-планер — это удобный инструмент для управления ежедневными задачами. Оно предоставляет пользователям возможность легко записывать, сортировать и организовывать свои дела. Это приложение было реализовано мной в рамках курсовой работы в вузе. Стек - C# + WPF + Microsoft SQL Server
 
 <image src="https://github.com/lyacsevna/MyPlans/blob/master/mainwindow.png?raw=true" alt="Главное окно">
+<image src="https://github.com/lyacsevna/MyPlans/blob/master/addtask.png?raw=true" alt="Добавление задачи">
 
 ## Основные функции
 
