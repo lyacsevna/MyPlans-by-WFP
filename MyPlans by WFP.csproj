@@ -225,10 +225,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="free-icon-font-user-3917688.png" />
-    <Resource Include="free-icon-save-3894100.png" />
-    <Resource Include="mainpicture.jpg" />
-    <Resource Include="Model\168371-gora-poverhnostnyj_koncentrator-nagore-sklon-poslesvechenie-x750.jpg">
+    <Resource Include="Model\background_image.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Content Include="Model\Model1.Context.tt">
