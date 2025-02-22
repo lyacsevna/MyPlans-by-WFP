@@ -7,15 +7,13 @@ The planner app is a convenient tool for managing daily tasks. It provides users
 
 ## Main functions
 
-Adding a task: The user can add new tasks by entering a title and description, as well as setting the due date and time.
-
-Task Priority: Ability to set a priority level ( high , medium, low) for each task, helping you focus on the most important things.
-
-Creating categories: The user can create their own task categories (e.g. work, study, personal matters, sports, etc.).
-
-Categorization on Add: When adding a new task, the user can select a category from a drop-down list, making it easier to organize tasks.
-
-Separation of tasks by users: Each user is provided with separate access to the application functionality. For this purpose, registration and authorization functions are implemented, which allows users to create their own accounts and log in to the system.
+- Adding a task: the user can add new tasks by entering a title and description, as well as setting the due date and time.
+- Task Priority: ability to set a priority level ( high , medium, low) for each task, helping you focus on the most important things.
+- Creating categories: the user can create their own task categories (e.g. work, study, personal matters, sports, etc.).
+- Categorization on Add: when adding a new task, the user can select a category from a drop-down list, making it easier to organize tasks.
+- Import and export tasks in .docx .xml and .xlsx formats.
+- Automatic archiving of tasks with the statuses "completed" and "canceled", as well as the ability to restore tasks from the archive.
+- Separation of tasks by users: each user is provided with separate access to the application functionality. For this purpose, registration and authorization functions are implemented, which allows users to create their own accounts and log in to the system.
 
 ## Installing and building the project
 
